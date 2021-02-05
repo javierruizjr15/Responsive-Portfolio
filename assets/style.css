@@ -1,3 +1,7 @@
-.nav {
+.navBar {
   background-color: black;
+}
+
+.navName {
+  color: black
 }
