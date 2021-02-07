@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javier Ruiz</title>
+  <!-- This CDN is for materialize to work -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/style.css">
 </head>
@@ -12,19 +13,65 @@
 <body>
 
     <nav class="navBar">
-      <div class="nav-wrapper">
+      <div class="nav-wrapper white">
           <a href="#" 
-          class="brand-logo">Javier Ruiz</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="index.html">About</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          class="brand-logo black-text">Javier Ruiz</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down ">
+          <li><a class="black-text" href="index.html">About</a></li>
+          <li><a class="black-text" href="portfolio.html">Portfolio</a></li>
+          <li><a class="black-text" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
-  
 
+<container>
+
+  <div class="row">
+    <div class="col s12 imageA">
+      <img src="assets/images/awesome background.jpg" class="responsive-img" alt="Awesome Pic">
+      <!-- <div class="carousel">
+        <a class="carousel-item" href="#one!"><img src="https://i.scdn.co/image/3bf28b315baf3ae20308ce20baed1f5325cba7a4"></a>
+        <a class="carousel-item" href="#two!"><img src="https://img.discogs.com/wYRKdPf0MvkrcZr9EGifP5iG6bI=/600x337/smart/filters:strip_icc():format(jpeg):mode_rgb():quality(90)/discogs-images/A-1061549-1467044291-5033.jpeg.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="https://tranceunitedblog.files.wordpress.com/2014/10/bennicky.jpg"></a>
+      </div> -->
+    </div>
+  </div>
+  <!-- About me row with 3 columns starts here -->
+  <div class="row">
+    <div class="col s4 center-align">!!!</div>
+    <div class="col s4 center-align">
+      <!-- Card code from materialize starts here -->
+      <div class="row center align">
+        <div class="col s12 m7 center-align">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/images/Javier Ruiz Profile Pic.jpg" class="center-align" alt="Javier Ruiz">
+              <span class="card-title">About Me</span>
+            </div>
+            <div class="card-content">
+              <p>My name is Javier Ruiz,</p>
+              <p>
+                I am highly motivated Software and Electrical Engineer.  I Specialize in Full stack development and Computer Science. 
+              </p>
+              </p>
+            </div>
+            <!-- <div class="card-action">
+              <a href="#">This is a link</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <div class="col s4 center-align">!!!</div>
+  </div>
+</container>
+    
+    <!-- This is for the jquery carousel to work -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  <!-- This is for the general materialize elements to work -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- This is to jump to the .js file -->
+  <!-- <script src="script.js"></script> -->
 </body>
 
 </html>
