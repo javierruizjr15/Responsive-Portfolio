@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javier Ruiz</title>
+  <!-- this is the cdn for nav bar icon -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- This CDN is for materialize to work -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="stylesheet" href="./assets/style.css">
  </head>
@@ -13,21 +16,32 @@
 
   <nav class="navBar">
     <div class="nav-wrapper white">
-      <a href="#" class="brand-logo black-text textName" id="nameAdjust">Javier Ruiz</a>
+      <a href="#" class="brand-logo black-text" id="nameAdjust">Javier Ruiz</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down ">
-        <li><a class="black-text" href="index.html">About</a></li>
+        <li><a class="black-text" href="index.html">Home</a></li>
         <li><a class="black-text" href="portfolio.html">Portfolio</a></li>
         <li><a class="black-text" href="contact.html">Contact</a></li>
       </ul>
+      <!-- code for navbar icon -->
+      <div class="nav">
+        <ul class="sidenav" id="mobile-demo">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <!-- end code for nav bar icon -->
     </div>
   </nav>
+
 
   <container>
 
     <!-- Start of portfolio header -->
     <div class="row">
-      <div class="col s4 center-align"></div>
-      <div class="col s4 center-align">
+    <div class="col s2 m4"></div>
+      <div class="center-align col s8 m4">
         <!-- Start of header code here -->
         <nav>
           <div class="nav-wrapper black">
@@ -35,7 +49,7 @@
           </div>
         </nav>
       </div>
-      <div class="col s4 center-align"></div>
+     <div class="col s2 m4"></div>
     </div>
     <!-- end of portfolio header -->
 
@@ -132,7 +146,17 @@
 -->
   </container>
 
+  <!-- This is for the general materialize elements to work -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- this is the plugin javascript for the nav bar icon  -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.sidenav');
+      var instances = M.Sidenav.init(elems, {});
+    });
+  </script>
+  <!-- end of java plug in -->
 </body>
 
 </html>
