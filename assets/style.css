@@ -11,5 +11,14 @@
   height: 50%;
 }
 
+.card-img-sizing {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+}
 
+@media only screen and (max-width: 475px) {
+  .card-img-sizing {
+    height: 250px;
+  }
 }
