@@ -17,8 +17,16 @@
   object-fit: cover;
 }
 
-@media only screen and (max-width: 475px) {
+@media only screen and (min-width: 0px) (max-width: 475px) {
   .card-img-sizing {
     height: 250px;
   }
-}
+
+  @media only screen and (min-width: 480px) (max-width: 800px) {
+    .card-img-sizing {
+      height: 200px;
+    }
+
+    /* javi start here and get the sizing done, then force dark mode. */
+  }
+

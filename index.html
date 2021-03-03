@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="./assets/style.css">
 </head>
 
-<body>
+<body id="dark">
 
     <nav class="navBar">
-      <div class="nav-wrapper white">
+      <div class="nav-wrapper">
           <a href="#" 
-          class="brand-logo black-text" id="nameAdjust">Javier Ruiz</a>
+          class="brand-logo black-text" id="nameAdjust nav-bar">Javier Ruiz</a>
           <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
         <ul id="nav-mobile" class="right hide-on-med-and-down ">
           <li><a class="black-text" href="index.html">Home</a></li>
@@ -92,6 +92,10 @@
       });
   </script>
   <!-- end of java plug in -->
+  <script>
+    document.getElementById('dark').style.backgrounColor= black;
+    // 'rgb(24, 22, 22)'
+  </script>
 </body>
 
 </html>
